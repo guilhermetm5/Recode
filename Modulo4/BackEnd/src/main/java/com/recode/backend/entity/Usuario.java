@@ -34,7 +34,7 @@ public class Usuario {
 		super();
 	}
 
-	public Usuario(int id, String nome, int idade, String dataNasc, String email, String telefone) {
+	public Usuario(int id, String nome, String idade, String dataNasc, String email, String telefone) {
 		super();
 		this.id = id;
 		this.nome = nome;
@@ -60,11 +60,11 @@ public class Usuario {
 		this.nome = nome;
 	}
 
-	public int getIdade() {
+	public String getIdade() {
 		return idade;
 	}
 
-	public void setIdade(int idade) {
+	public void setIdade(String idade) {
 		this.idade = idade;
 	}
 

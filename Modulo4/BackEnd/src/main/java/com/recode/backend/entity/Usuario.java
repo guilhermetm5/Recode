@@ -1,5 +1,7 @@
 package com.recode.backend.entity;
 
+import java.util.Objects;
+
 /*
  *	Autor: João Guilherme em 12/07/2024,
  * 	Para entrega e avaliação da Recode ProAldeia. 
@@ -75,7 +77,23 @@ public class Usuario {
 	public void setTelefone(String telefone) {
 		this.telefone = telefone;
 	}
-	
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(id);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Usuario other = (Usuario) obj;
+		return id == other.id;
+	}
 	
 	
 }

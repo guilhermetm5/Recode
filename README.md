@@ -14,10 +14,11 @@ relativos ao módulos do curso Full Stack Recode Pro Aldeia.
 
 ## Modulo 1:
 - Socioemocional
+(sem arquivos anexos, as aulas foram de como se organizar para as aulas ao vivo e como manter a constância nos estudos.)
 
 ## Modulo 2:
 - Lógica de programação
-- HTM e CSS
+- HTML e CSS
 - Métodos ágeis
 - Bootstrap
 

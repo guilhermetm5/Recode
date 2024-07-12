@@ -2,18 +2,32 @@ package com.recode.backend.entity;
 
 import java.util.Objects;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
 /*
  *	Autor: João Guilherme em 12/07/2024,
  * 	Para entrega e avaliação da Recode ProAldeia. 
  */
 
+@Entity
 public class Usuario {
 	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
+	@Column(name = "usuario_nome", nullable = false, length = 80)
 	private String nome;
-	private int idade;
+	@Column(name = "usuario_idade", nullable = false)
+	private String idade;
+	@Column(name = "usuario_dataNascimento", nullable = false)
 	private String dataNasc;
+	@Column(name = "usuario_email", nullable = false)
 	private String email;
+	@Column(name = "usuario_telefone", nullable = false)
 	private String telefone;
 	
 	public Usuario() {
